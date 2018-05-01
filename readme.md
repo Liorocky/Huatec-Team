@@ -10,5 +10,5 @@
 
 ## Echarts
 1. [Echarts官网](http://echarts.baidu.com/)
-2. [ECharts教程](http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts)
+2. [Echarts教程](http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts)
 3. [Echarts实例](http://echarts.baidu.com/examples/)
