@@ -1,7 +1,7 @@
 # 参考[首页资料](https://github.com/WarMj/Huatec-Team)，学习Echarts，掌握柱状图和饼图。
 # 任务
 1. 将https://github.com/WarMj/Huatec-Team 这个项目 **pull** 到自己的GitHub中。
-2. 进入自己fork到的项目里，在`2018-05-02`目录下创建目录，目录名为自己的全部姓名小写拼音，以惠俞淮举例，其目录名为`huiyuhuai`。
+2. 进入项目，在`2018-05-02`目录下创建目录，目录名为自己的全部姓名小写拼音，以惠俞淮举例，其目录名为`huiyuhuai`。
 3. 编写前端HTML代码，完成以下两个子任务。
 
 	1. 完成饼图的制作。
