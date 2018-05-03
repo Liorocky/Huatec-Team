@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>z.gfxy.com</title>
+		<script type="text/javascript" src="http://echarts.baidu.com/dist/echarts.js"></script>
+	</head>
+
+	<body>
+		<div id="line" style="float: left;margin: 5% 0 0 5%;width: 650px;height: 400px;"></div>
+		<div id="pie" style="float: left;margin: 5% 0 0 5%;width: 650px;height: 400px;"></div>
+		<script type="text/javascript">
+			var myChart_line = echarts.init(document.getElementById('line'));
+			var option_line = {
+				title: {
+					text: 'z.gfxy.com',
+					subtext: '网站发表的文章数量'
+				},
+				tooltip: {},
+				legend: {
+					data: ['文章数量']
+				},
+				xAxis: {
+					data: ["网络安全", "办公软件", "健康健身", "毕业求职", "节日文化", "逻辑思维", "实用知识", "党政宣传"]
+				},
+				yAxis: {},
+				series: [{
+					name: '文章数量',
+					type: 'bar',
+					data: [77, 48, 46, 50, 66, 5, 255, 61]
+				}],
+			};
+			myChart_line.setOption(option_line);
+
+			var myChart_pie = echarts.init(document.getElementById('pie'));
+			var option_pie = {
+				title: {
+					text: 'z.gfxy.com',
+					subtext: '作者发表的文章占比'
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				legend: {
+					bottom: 10,
+					data: ['徐华宇', '王洁', '王瑾', 'jxx', '严博文', '任昊翔', '吕栋']
+				},
+				series: [{
+					name: '文章数量',
+					type: 'pie',
+					radius: '65%',
+					center: ['50%', '50%'],
+					selectedMode: 'single',
+					data: [{
+							value: 250,
+							name: '徐华宇'
+						},
+						{
+							value: 3,
+							name: '王洁'
+						},
+						{
+							value: 2,
+							name: '王瑾'
+						},
+						{
+							value: 312,
+							name: 'jxx'
+						},
+						{
+							value: 22,
+							name: '严博文'
+						},
+						{
+							value: 6,
+							name: '任昊翔'
+						},
+						{
+							value: 29,
+							name: '吕栋'
+						}
+					],
+					itemStyle: {
+						emphasis: {
+							shadowBlur: 10,
+							shadowOffsetX: 0,
+							shadowColor: 'rgba(0, 0, 0, 0.5)'
+						}
+					}
+				}]
+			};
+			myChart_pie.setOption(option_pie);
+		</script>
+	</body>
+
+</html>
