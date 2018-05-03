@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+				show:true,
+                text: '中兴3162班17学年体育达标统计图',
+				subtext:'纯属虚构',
+				left:'left',
+				borderColor:'red',
+				textStyle:{
+					fontSize:20
+				}
+				
+            },
+			toolbox: { 
+				show:true,
+				feature:{
+					dataView:{
+						show:true
+					},
+					restore:{
+						show:true
+					},
+					dataZoom:{
+						show:true
+					},
+					saveAsImae:{
+						show:true
+					},
+					magicType:{
+						type:['line','bar']
+					}
+				}
+			},
+            tooltip: {
+				trigger:'axis' //可视化
+			},
+            legend: {
+                data:['上学期','下学期']
+				
+            },
+            xAxis: {
+                data: ["跑步","立定跳远","跳绳","引体向上","乒乓球","足球"]
+            },
+            yAxis: {
+				type:'value',
+				name:'人数'
+			},
+            series: [{
+                name: '上学期',
+                type: 'bar',
+                data: [29, 31, 20, 10, 15, 6]
+            },{
+				name:'下学期',
+				type:'bar',
+				data:[25,33,25,20,15,9]
+			}]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+	<div id="main-" style="width: 1000px;height:600px;"></div>
+	<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+	var myChart = echarts.init(document.getElementById('main-'));
+// 指定图表的配置项和数据
+	var option = {
+    title : {
+        text: '中兴3162班17学年上学期体育达标饼状图',
+        subtext: '纯属虚构',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ["跑步","立定跳远","跳绳","引体向上","乒乓球","足球"]
+    },
+    series : [
+        {
+            name: '上学期',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:29, name:'跑步'},
+                {value:31, name:'立定跳远'},
+                {value:20, name:'跳绳'},
+                {value:10, name:'引体向上'},
+                {value:15, name:'乒乓球'},
+				{value:6, name:'足球'},
+            ]
+        }
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+</body>
+</html>
