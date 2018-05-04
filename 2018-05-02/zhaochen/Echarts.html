@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <style type="text/css">
+    	#header{
+				width: 100%;
+				height: 1000px;
+				background-color: #00FFFF;
+    	}
+    	#yuan{
+				width: 50%;
+				height: 500px;
+				float: left;
+				padding-top: 100px;
+		}
+		#tu{
+			
+				width: 50%;
+				height: 500px;
+				float: left;
+				padding-top: 100px;
+		}
+    </style>
+    <!-- 引入 echarts.js -->
+    <script src="js/echarts.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="header">
+    	<div id="yuan" style="width: 600px;height:400px;"></div>
+    	
+    	<div id="tu" style="width: 600px;height:400px;"></div>
+    </div>
+    
+    <script type="text/javascript">
+    	
+    	
+    	//图的代码
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('tu'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '就业方向比例'
+            },
+            tooltip: {},
+            legend: {
+                data:['人数']
+            },
+            xAxis: {
+                data: ["Java开发","C++","网络运维","网页前端"]
+            },
+            yAxis: {},
+            series: [{
+                name: '人数',
+                type: 'bar',
+                data: [15, 20, 68, 45]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        
+        
+        
+    </script>
+	<script type="text/javascript">
+
+        // 基于准备好的dom，初始化echarts实例
+
+	var myChart = echarts.init(document.getElementById('yuan'));
+
+// 指定图表的配置项和数据
+
+	var option = {
+
+    title : {
+
+        text: '就业意向分布图',
+
+        x:'center'
+
+    },
+
+    tooltip : {
+
+        trigger: 'item',
+
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+
+    },
+
+    legend: {
+
+        orient: 'vertical',
+
+        left: 'left',
+
+        data: ["Java开发","C++","网络运维","网页前端"]
+
+    },
+
+    series : [
+
+        {
+
+            name: '图',
+
+            type: 'pie',
+
+            radius : '55%',
+
+            center: ['50%', '60%'],
+
+            data:[
+
+                {value:15, name:'Java开发'},
+
+                {value:20, name:'C++'},
+
+                {value:68, name:'网络运维'},
+
+                {value:45, name:'网页前端'},
+
+
+            ]
+
+        }
+
+    ]
+
+};
+
+// 使用刚指定的配置项和数据显示图表。
+
+myChart.setOption(option);
+
+</script>
+</body>
+</html>
