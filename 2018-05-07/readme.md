@@ -11,7 +11,7 @@ json数据样式:[http://api.shenjian.io/?appid=dd648129b0e17057b8901c27f4a88021
 
 	![实时票房.png](https://upload-images.jianshu.io/upload_images/2864463-8a8996ed1979c5e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
-4. ** 注意 **任务三中图表的票房数据需要使用ajax()异步请求方法动态获取，不能手动输入。图表样式自定义。
+4. ** 注意 **任务三中图表的票房数据需要** 使用ajax()异步请求方法动态获取，不能手动输入。** 图表样式自定义。
 5. 可能会用到的ajax()参数：
 
 	1. 请求服务器地址(url)：`http://api.shenjian.io/`。
