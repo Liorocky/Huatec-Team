@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="js/echarts.js"></script>
+		<title></title>
+	
+		</style>
+	</head>
+	<body>
+		<div id="123" style="width:600px; height: 400px;"></div>
+		<script type="text/javascript">
+        //指定图标的配置和数据
+        var option = {
+            title:{
+                text:'ECharts 数据统计'
+            },
+            tooltip:{},
+            legend:{
+                data:['用户来源']
+            },
+            xAxis:{
+                data:["男","女"]
+            },
+            yAxis:{
+
+            },
+            series:[{
+                name:'访问量',
+                type:'bar',
+                data:[700,200,]
+            }]
+        };
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('123'));
+
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+    </script>
+    
+    		<div id="456" style="width:600px; height: 400px;"></div>
+		<script type="text/javascript">
+        //指定图标的配置和数据
+option = {
+    title : {
+        text: '热门专业统计',
+        subtext: '纯属虚构',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['云计算','大数据','软件开发','物联网','智能ai']
+    },
+    series : [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:335, name:'云计算'},
+                {value:310, name:'大数据'},
+                {value:234, name:'软件开发'},
+                {value:135, name:'物联网'},
+                {value:1548, name:'智能ai'}
+            ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('456'));
+
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+    </script>
+    
+   
+
+	</body>
+</html>
