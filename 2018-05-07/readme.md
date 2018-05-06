@@ -2,7 +2,7 @@
 # 任务
 ## 概述
 本次任务需要自学Jquery库中的ajax()方法，动态获取json数据，对获取到的json数据进行清洗，然后将清洗好的数据传给Echarts图表。综合性较强，如果个人无法完成，可多人协同，一起商讨。
-json数据样式:`http://api.shenjian.io/?appid=dd648129b0e17057b8901c27f4a88021`
+json数据样式:[](http://api.shenjian.io/?appid=dd648129b0e17057b8901c27f4a88021)
 
 ## 任务列表
 1. 将https://github.com/WarMj/Huatec-Team 这个项目 **pull** 到自己的GitHub中。
