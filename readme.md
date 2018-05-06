@@ -12,3 +12,7 @@
 1. [Echarts官网](http://echarts.baidu.com/)
 2. [Echarts教程](http://echarts.baidu.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts)
 3. [Echarts实例](http://echarts.baidu.com/examples/)
+4. [echarts x轴坐标文字显示不全](https://blog.csdn.net/wu920604/article/details/53332520)
+
+## Jquery
+1. [ajax()方法详解](http://www.cnblogs.com/tylerdonet/p/3520862.html)

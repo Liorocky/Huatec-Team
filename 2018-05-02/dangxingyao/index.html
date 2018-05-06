@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/echarts.js"></script>
+		<meta charset="utf-8" />
+		<title></title>
+	
+	
+	</head>
+	<body>
+		<div id="chartmain1" style="width:600px; height: 400px;"> </div>
+			<script type="text/javascript">
+        //指定图标的配置和数据
+        var option = {
+            title:{
+                text:'柱状 数据统计'
+            },
+            tooltip:{},
+            legend:{
+                data:['用户来源']
+            },
+            xAxis:{
+                data:["Android","IOS","PC","Ohter"]
+            },
+            yAxis:{
+
+            },
+            series:[{
+                name:'访问量',
+                type:'bar',
+                data:[500,200,360,100]
+            }]
+        };
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chartmain1'));
+
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+        
+       </script> 
+      
+      
+      
+        <div id="chartmain" style="width:600px; height: 400px;"> </div>
+			<script type="text/javascript">
+        
+        var option = {
+            title:{
+                text:' 饼状数据统计'
+            },
+            tooltip:{},
+            legend:{
+                data:['用户来源']
+            },
+            
+            series:[{
+                name:'访问量',
+                type:'pie',
+                data:[
+                    {value:500,name:'Android'},
+                    {value:200,name:'IOS'},
+                    {value:360,name:'PC'},
+                    {value:100,name:'Ohter'}]
+            }]
+        };
+        //初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chartmain'));
+
+        //使用制定的配置项和数据显示图表
+        myChart.setOption(option);
+        </script> 
+	</body>
+</html>
