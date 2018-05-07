@@ -4,12 +4,12 @@ js代码如下所示：
 ```
 // echarts图表绘制函数
 function myData(text) {
-  var xA = [];
-  var yA = [];
-  // 将获取到的json数据列表清洗数据后push到xA、yA两个坐标轴数据列表
-  // 注意，此处循环函数可以用于未知数量的数据，不必提前预知数据量大小
-  for(var i = 0; i < text.data.length; i++) {
-    xA.push(text.data[i].MovieName);
+	var xA = [];
+	var yA = [];
+	// 将获取到的json数据列表清洗数据后push到xA、yA两个坐标轴数据列表
+	// 注意，此处循环函数可以用于未知数量的数据，不必提前预知数据量大小
+	for(var i = 0; i < text.data.length; i++) {
+		xA.push(text.data[i].MovieName);
 		yA.push(text.data[i].BoxOffice);
 	}
 	var myChart = echarts.init(document.getElementById('res'));
@@ -22,11 +22,11 @@ function myData(text) {
 			data: ['金额/万元']
 		},
 		grid: {
-  		y2: 140
+			y2: 140
 		},
 		xAxis: {
 			data: xA,
-  		axisLabel: {
+  			axisLabel: {
 				interval: 0,
 				rotate: -25
 			}
@@ -38,7 +38,7 @@ function myData(text) {
 			data: yA,
 		}]
 	};
-myChart.setOption(option);
+	myChart.setOption(option);
 };
 
 // ajax异步获取json函数
@@ -51,7 +51,7 @@ function myJson() {
 		},
 		dataType: "jsonp",
 		success: function(data) {
-      // 获取json数据后传递给图表函数
+			// 获取json数据后传递给图表函数
 			myData(data)
 		}
 	});
