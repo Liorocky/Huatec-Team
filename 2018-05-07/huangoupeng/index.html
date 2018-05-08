@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实时票房</title>
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="http://echarts.baidu.com/dist/echarts.js"></script>
+	</head>
+
+	<body>
+		<div id="main" style="width: 600px;height: 400px;"></div>
+		<script>
+			function myData(text) {
+				var xA = [];
+				var yA = [];
+				for(var i = 0; i < text.data.length; i++) {
+					xA.push(text.data[i].MovieName);
+					yA.push(text.data[i].BoxOffice);
+				}
+				var myChart = echarts.init(document.getElementById('main'));
+				var option = {
+					title: {
+						text: ''
+					},
+					toolbox: { 
+						show:true,
+						feature:{
+							dataView:{
+								show:true
+							},
+							saveAsImae:{
+								show:true
+							},
+							magicType:{
+								type:['line','bar']
+							}
+						}
+					},
+					tooltip: {},
+					legend: {
+						data: ['实时票房']
+					},
+					grid: {
+						y2: 140
+					},
+					xAxis: {
+						name:'电影',
+						data: xA,
+						axisLabel: {
+							interval: 0,
+							rotate: -25
+							
+						}
+					},
+					yAxis: {
+						type:'value',
+						name:'金额/万元'
+					},
+					series: [{
+						name: '实时票房',
+						type: 'bar',
+						data: yA,
+					}]
+				};
+				myChart.setOption(option);
+			};
+			function myJson() {
+				$.ajax({
+					type: "get",
+					url: "http://api.shenjian.io/",
+					data: {
+						appid: "dd648129b0e17057b8901c27f4a88021"
+					},
+					dataType: "jsonp",
+					success: function(data) {
+						myData(data)
+					}
+				});
+			};
+			myJson();
+		</script>
+	</body>
+
+</html>
