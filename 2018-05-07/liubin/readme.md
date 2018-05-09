@@ -1,5 +1,7 @@
 ![](1.PNG)
-....
+
+
+
 实现代码
 
 		<script>
@@ -53,8 +55,7 @@
 				myChart.setOption(option);
 			};
 			
-			
-function myJson() {
+			function myJson() {
 				$.ajax({
 					type: "get",
 					url: "http://api.shenjian.io/",
