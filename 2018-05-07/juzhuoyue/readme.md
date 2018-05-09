@@ -1,16 +1,9 @@
 ![Alt text](a.PNG  "optional title")
-<!DOCTYPE html>
-<html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>实时票房</title>
-		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="http://echarts.baidu.com/dist/echarts.js"></script>
-	</head>
 
-	<body>
-		<div id="main" style="width: 700px;height: 500px;"></div>
+js代码如下
+
+	```	
 		<script>
 			function myData(text) {
 				var xA = [];
@@ -62,6 +55,4 @@
 			};
 			myJson();
 		</script>
-	</body>
-
-</html>
+```
