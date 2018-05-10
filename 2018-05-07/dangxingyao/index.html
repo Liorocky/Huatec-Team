@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE >
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ECharts</title>
+    
+
+    <script src="http://echarts.baidu.com/dist/echarts.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		
+</head>
+
+
+<body>
+   
+    <div id="second" style="width: 800px;height:400px;"></div>
+    
+    <script type="text/javascript">
+        
+        var domLong = document.getElementById("second");  
+var myChartSecond = echarts.init(domLong);  
+var app = {};  
+option = null;  
+option = {  
+        color: ['#3398DB'],  
+        tooltip : {  
+            trigger: 'axis',  
+            axisPointer : {            
+                type : 'shadow'       
+            }  
+        },  
+        grid: {  
+            left: '3%',  
+            right: '4%',  
+            bottom: '3%',  
+            containLabel: true  
+        },  
+        xAxis : [  
+            {  
+                type : 'category',  
+                data : [],  
+                axisLabel: {
+				interval: 0,
+				rotate: -25
+			}
+            }  
+        ],  
+        yAxis : [  
+            {  
+                type : 'value'  
+            }  
+        ],  
+        series : [  
+            {  
+                name:'直接访问',  
+                type:'bar',  
+                barWidth: '60%',  
+                data:[]  
+            }  
+        ]  
+    };  
+if (option && typeof option === "object") {  
+    myChartSecond.setOption(option, true);  
+}  
+ 
+ var year = $("#year-search").val();  
+    $.ajax({  
+           type:  "get",  
+           url: "http://api.shenjian.io/", 
+           data: {
+		          appid: "dd648129b0e17057b8901c27f4a88021"
+	              },
+           cache : false,   
+           dataType: "jsonp",  
+           success: function(result) {  
+           	//alert(result.data[0].MovieName)
+             var linNames=[];  
+             var linNums=[];  
+				 $.each(result.data,function(key,values){    
+  					
+                    linNames.push(values.MovieName);  
+                    linNums.push(values.BoxOffice);  
+                      
+                 });  
+            
+            myChartSecond.setOption({ 
+                        xAxis: {  
+                                data: linNames  
+                               },  
+                        series: {  
+                               
+                                name: ['数量'],  
+                                data: linNums  
+                  }  
+           });            
+           },  
+           error: function(XMLHttpRequest, textStatus, errorThrown) {  
+               alert("查询失败");  
+           }  
+       });  
+            
+             
+      
+         
+    </script>
+    
+</body>
+</html> 
