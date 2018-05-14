@@ -6,3 +6,4 @@
 ### [2018-04-28 第一次任务：学习GitHub](https://github.com/WarMj/Huatec-Team/tree/master/2018-04-28)
 ### [2018-05-02 第二次任务：学习Echarts(一)](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-02)
 ### [2018-05-07 第三次任务：学习Echarts(二) & Jquery库](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-07)
+### [2018-05-13 第四次任务：学习Echarts(三) & Jquery库](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-13)
