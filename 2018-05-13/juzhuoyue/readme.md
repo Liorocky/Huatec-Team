@@ -11,11 +11,6 @@ function myHq(HqUrl, HqId, HqType, HqDataType) {
 			appid: HqId
 		},
 		dataType: HqDataType,
-	//	beforeSend: function(aaa) {
-	//		console.log(aaa);
-	//		alert('请求开始啦!!');
-			//在请求操作之前
-	//	},
 		//对该成功获取的数据进行处理
 		success: function(data) {
 			var hqData1 = [];
@@ -59,11 +54,6 @@ function hqChart(Data1, Data2) {
 		series: [{
 			name: '票房排行',
 			data: Data1.reverse(),//将数组反转
-			//arr.reverse(Data1),
-//			Data1.sort(function(x, y) {
-//				return y - x   //比较函数两个参数x和y，返回x-y升序，返回y-x降序
-//				//return x - y
-//			}),
 			
 			type: 'bar',
 			label: {
