@@ -2,17 +2,19 @@
 
 ajax的js代码如下所示：
 ```
-$.ajax({
-	type: "get",
-	url: "http://api.shenjian.io/",
-	data: {
-		appid: "dd648129b0e17057b8901c27f4a88021"
-	},
-	dataType: "jsonp",
-	success: function(data) {
-		topClean(data);
-	}
-});
+function topJson(jsonUrl, jsonId, JsonType, JsonDataType) {
+	$.ajax({
+		type: JsonType,
+		url: jsonUrl,
+		data: {
+			appid: jsonId
+		},
+		dataType: JsonDataType,
+		success: function(data) {
+			topClean(data);
+		}
+	});
+}
 
 function topClean(data) {
 	var topData1 = [];
