@@ -64,21 +64,20 @@ function Json(url,appid,type,datatype){
            cache : false,   
            dataType: datatype,  
            success: function(data) {
-						myZy(data)
-							}
-				});
-			};
-function myZy(text) {
-				var x = [];
+           	var x = [];
 				var y = [];
 			
-				for(var i = 0; i < text.data.length; i++) {
-					x.push(text.data[i].MovieName);
-					y.push(text.data[i].Irank);
+				for(var i = 0; i < data.data.length; i++) {
+					x.push(data.data[i].MovieName);
+					y.push(data.data[i].Irank);
 					
 					
 				}
 				y.reverse()
 				xyecharts(x,y); 
-			}
-      ```
+
+							}						
+				});
+		
+				
+	};
