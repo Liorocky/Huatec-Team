@@ -12,6 +12,10 @@ PS：这次的任务看似和上次没太大区别，但是非常考验细节，
         1. 要求鼠标移至柱图上不显示标签。
         2. 要求按照动态获得的数据中的排名顺序一致，并且从左至右柱状图的高度从高到低，数字从1开始从小到大。
         3. 不显示Y轴。
+        4. 排名数据使用`Irank`,如下图所示。
+      
+    ![图片.png](https://upload-images.jianshu.io/upload_images/2864463-e57ef950b409ae33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+        5. 完成样图
         
     ![样图.png](https://upload-images.jianshu.io/upload_images/2864463-b9ab694ae0e1c291.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
        
