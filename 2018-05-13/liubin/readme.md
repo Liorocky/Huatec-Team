@@ -1,6 +1,7 @@
-![1.PNG]
-ajax代码块
+![](1.PNG)
+
 ```
+ajax代码块
 function Json(jsonUrl, jsonId, JsonType, JsonDataType) {
 	$.ajax({
 		type: JsonType,
@@ -27,8 +28,9 @@ function Json(jsonUrl, jsonId, JsonType, JsonDataType) {
 					}
 
 ```
-echarts代码块  
+  
 ```
+echarts代码块
 	function chart(A,B){
 	var chart = echarts.init(document.getElementById('ech')); 
         var option = {
