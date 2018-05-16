@@ -1,0 +1,25 @@
+function Json(Url, Id, Type, DataType) {
+	$.ajax({
+		type: Type,
+		url: Url,
+		data: {
+			appid: Id
+		},
+		dataType: DataType,
+		success: function(data) {
+			intex(data);
+		}
+	});
+}
+
+function intex(data) {
+	var data1 = [];
+	var data2 = [];
+	for(var i = 0; i < data.data.length; i++) {
+
+		data1.splice(i, 0, data.data[i].Irank);
+		data2.splice(i, 0, data.data[i].MovieName);
+		
+	};
+	varChart(data1, data2);
+}
