@@ -1,5 +1,26 @@
 ![](https://github.com/felixmzc/Huatec-Team/blob/master/2018-05-13/mazhichao/41.PNG "title")
 
+index.html 代码
+```
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>票房排名</title>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://echarts.baidu.com/dist/echarts.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/echarts.js"></script>
+		<script>
+			lxJson("http://api.shenjian.io/", "dd648129b0e17057b8901c27f4a88021", "get", "jsonp")
+		</script>
+	</head>
+	<body>
+		<div id="lx" style="width: 800px;height: 600px;"></div>
+	</body>
+</html>
+```
+
 ajax.js 代码
 ```
 function lxJson(jsonUrl, jsonId, JsonType, JsonDataType) {
