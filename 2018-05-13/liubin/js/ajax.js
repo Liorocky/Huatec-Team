@@ -1,4 +1,4 @@
-```
+
 function Json(jsonUrl, jsonId, JsonType, JsonDataType) {
 	$.ajax({
 		type: JsonType,
@@ -23,4 +23,3 @@ function Json(jsonUrl, jsonId, JsonType, JsonDataType) {
 	};
 						chart( A , B);
 					}
-          ```
