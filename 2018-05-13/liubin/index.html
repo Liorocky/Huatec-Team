@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>票房排名</title>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://echarts.baidu.com/dist/echarts.js"></script>
+		
+		<script type="text/javascript" src="js/ajax.js" ></script>
+		<script type="text/javascript" src="js/echarts.js" ></script>
+		<script>
+			Json("http://api.shenjian.io/", "dd648129b0e17057b8901c27f4a88021", "get", "jsonp")
+		</script>
+		
+		<div id="ech" style="width: 600px;height: 400px;"></div>
+		
+	</head>
+
+	<body>
+		
+		<div id="echarts"  style="width: 800px; height: 500px;"></div>
+	</body>
+
+</html>
