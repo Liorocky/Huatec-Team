@@ -20,3 +20,7 @@
 
 ## MySql
 1. [MySql安装教程](https://blog.csdn.net/wengengeng/article/details/52013650)
+
+## 框架
+1. [关于view、controller、service、dao的理解](http://1358440610-qq-com.iteye.com/blog/1871393)
+2. [Java中 VO、PO、DO、DTO、BO、QO、DAO、POJO的概念](https://blog.csdn.net/zhongqi2513/article/details/78940729)
