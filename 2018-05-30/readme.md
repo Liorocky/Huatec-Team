@@ -39,14 +39,16 @@
     5. 编写`Service`接口及其实现类。
     6. 编写`Controller`类。
 6. 接口文件的存放位置及命名规则请参考下图：
-    1. 将所有接口写到`自己的GitHub中的datadisplay中`(注意，所有的接口编写都写在自己的项目中，如没有特殊说明，今后所有的接口都这样写)，并且建议修改包名。（如我的包名是`top.warmj`）
+    1. 将所有接口写到`自己的datadisplay中`(注意，所有的接口编写都写在自己的项目中，如没有特殊说明，今后所有的接口都这样写)，并且建议修改包名。（如我的包名是`top.warmj`）
     2. 命名规范为`***Dao`、`***Do`…
     ![image.png](https://upload-images.jianshu.io/upload_images/2864463-49475d80b5826f46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-7. 运行项目，访问自己的接口地址。（接口地址应在`Controller`中，多看看项目中能运行的接口是如何编写的。）
-    
-8. 在自己目录下创建`readme.md`文件，编辑此文件，内容需包含 **自己的GitHub中`datadisplay`项目的连接**、**新建表的截图**、**项目结构截图**、**成功运行后的网页截图**。
+7. 将所有的代码`push`到自己的GitHub中。
 
-9. **注意！！** 最后提交时参考下图。 **很多人都是在这步犯错，请检查仔细。**
+8. 运行项目，访问自己的接口地址。（接口地址应在`Controller`中，多看看项目中能运行的接口是如何编写的。）
+    
+9. 在自己目录下创建`readme.md`文件，编辑此文件，内容需包含 **自己的GitHub中`datadisplay`项目的连接**、**新建表的截图**、**项目结构截图**、**成功运行后的网页截图**。
+
+10. **注意！！** 最后提交时参考下图。 **很多人都是在这步犯错，请检查仔细。**
 
 ![注意.png](https://upload-images.jianshu.io/upload_images/2864463-6f01a72f8d759c3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
