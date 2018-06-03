@@ -7,4 +7,5 @@
 ### [2018-05-02 第二次任务：学习Echarts(一)](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-02)
 ### [2018-05-07 第三次任务：学习Echarts(二) & Jquery库](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-07)
 ### [2018-05-13 第四次任务：学习Echarts(三) & Jquery库](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-13)
-### [2018-05-13 第五次任务：创建数据库并导入项目文件](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-17)
+### [2018-05-17 第五次任务：创建数据库并导入项目文件](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-17)
+### [2018-05-30 第六次任务：自行编写接口](https://github.com/WarMj/Huatec-Team/tree/master/2018-05-30)
