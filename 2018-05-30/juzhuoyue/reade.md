@@ -1,5 +1,5 @@
 自己GitHub项目的连接
-https://github.com/juzhuoyue/juzhuoyue
+https://github.com/juzhuoyue/juzhuoyue/tree/master/datadisplay-jzy
 
 成功运行网页的截图：
 
