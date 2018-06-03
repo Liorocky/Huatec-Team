@@ -1,5 +1,5 @@
 自己GitHub项目的连接
-https://github.com/19980612/dangxingyao
+https://github.com/19980612/dxy2
 
 数据库及表的截图：
 
